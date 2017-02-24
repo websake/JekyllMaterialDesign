@@ -1,2 +1,2 @@
-# jekyll-material-design
-A Jekyll Theme inspired by Google Material Design
+# jekyll-material
+A Jekyll theme inspired by Google Material design

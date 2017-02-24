@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div align="center">
+    <div class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</div>
+    <div class="post-tags">
+Tags
+{% for tag in page.tags %} <div class='tag'><a href='/tag/#{{tag}}'>{{tag}}</a></div> {% endfor %}
+    </div>
+    </div>
+  </header>
+
+<div id="about_card" class="card">
+  <article class="post-content">
+    {{ content }}
+  </article>
+</div>
+<br>
+<p align="center" class="permalink"><a href="{{ page.title }}">{{ page.title }}</a></p>
+
+  {% include comments.html %}
+
+</div>
